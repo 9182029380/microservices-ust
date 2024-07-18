@@ -28,6 +28,10 @@ public class ProductService {
                 .build();
         return repo.save(product1);
     }
+
+    public List<Product> getProductsByMcode(Long mcode) {
+        return repo.findByMcode(mcode);
+    }
 }
 
 
